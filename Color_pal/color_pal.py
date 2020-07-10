@@ -9,7 +9,7 @@ def run():
     dst_path = os.path.join(src, "sorted")
     os.mkdir(dst_path)
     sort_images(src=src, dst=dst_path, ext=get_ext(src))
-
+    print("Done!")
 
 def get_ext(src):
     # Assumes that all images follow the same format, gets file extension of the first image
